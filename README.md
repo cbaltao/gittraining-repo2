@@ -24,7 +24,7 @@ Once an empty repository is created, use these commands to link and push the loc
 
 # Git Workflows
 
-![alt text](image-1.png)
+![Workflow Diagram](image-1.png)
 
 # Branching
 
@@ -32,7 +32,7 @@ Branches act as commit/save paths. You are able to create multiple branches with
 
 This is best used when testing code or implementing new features. Branching acts as a safeguard in the case that a testing branch fails, it won't affect the main/production branch.
 
-![alt text](image.png)
+![Branching Diagram](image.png)
 
 To check branches, use this command "git branch".
 
