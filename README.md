@@ -76,10 +76,32 @@ Create test branch >> Make changes to code >> add, commit, and push changes in t
 
 # Merge Conflicts
 
-Merge conflicts happen when there are multiple people working on project and happen to modify the same code. When this happens, a branch merge will not be accepted until the conflict is resolved.
+Merge conflicts happen when there are multiple people working on a project and happen to modify the same code. When this happens, a branch merge will not be accepted until the conflict is resolved.
 
 ## Resolving Conflicts
 
 After making changes to your code, use the command "git diff master" from the test branch to compare the two versions. 
 
 Use the command "git merge master" and an interface will popup on VS code showing the changes. You must choose which change to accept and then commit and push the change. 
+
+# Undoing 
+
+When committing and adding files, sometimes we have to undo our actions.
+
+To undo an add, use "git reset". This will work as long as the file has not been committed yet.
+
+To undo a commit, use:
+
+"git reset HEAD" -> resets the most recent commit.
+
+"git reset HEAD~1" -> resets commit 1 place before the most recent commit.
+
+"git reset <commitHashCode>" -> unstages the changes from that commit.
+
+"git reset --hard <commitHashCode>" -> unstages and completely resets the state of your code to the next commit.
+
+# Forking 
+
+Forking is the process of cloning a whole repository. 
+
+This can be used to add your own changes to an existing repository without disrupting the existing code/branch structures.
