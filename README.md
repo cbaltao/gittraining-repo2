@@ -48,3 +48,23 @@ The command "git checkout" is used to switch from branches.
 
 This README.md file is updated through test-branch-1.
 
+# Diffing
+
+The "git diff <branchname>" command shows the changes between the different versions of code on each branch.
+
+# Merging
+
+Before merging the two branches together, push the changes to github first.
+
+"git push -u origin <branchname>"
+
+# Pull Request
+
+A request to pull your code into another branch. Other people will be able to view the changes before merging them into the main branch.
+
+After making a pull request, you are still able to make changes and commits as long as you are still in the test branch.
+
+After your code is merged, the test branch should be deleted. Then you switch back to the master branch.
+
+To make new changes to the code, you start the process of creating a new branch and merging the branch to the master branch all over again.
+
