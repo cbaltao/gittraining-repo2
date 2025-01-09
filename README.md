@@ -24,7 +24,11 @@ Once an empty repository is created, use these commands to link and push the loc
 
 # Git Workflows
 
+<<<<<<< HEAD
+![alt text](image-1.png)
+=======
 ![Workflow Diagram](image-1.png)
+>>>>>>> master
 
 # Branching
 
@@ -32,7 +36,11 @@ Branches act as commit/save paths. You are able to create multiple branches with
 
 This is best used when testing code or implementing new features. Branching acts as a safeguard in the case that a testing branch fails, it won't affect the main/production branch.
 
+<<<<<<< HEAD
+![alt text](image.png)
+=======
 ![Branching Diagram](image.png)
+>>>>>>> master
 
 To check branches, use this command "git branch".
 
@@ -56,3 +64,25 @@ The "git diff <branchname>" command shows the changes between the different vers
 
 Before merging the two branches together, push the changes to github first.
 
+<<<<<<< HEAD
+"git push -u origin <branchname>"
+
+# Pull Request
+
+*Best managed through github*
+
+A request to pull your code into another branch. Other people will be able to view the changes before merging them into the main branch.
+
+After making a pull request, you are still able to make changes and commits as long as you are still in the test branch.
+
+After your code is merged, the test branch should be deleted. Then you switch back to the master branch.
+
+To make new changes to the code, you start the process of creating a new branch and merging the branch to the master branch all over again.
+
+# Branch Merging Workflow
+
+Create test branch >> Make changes to code >> add, commit, and push changes in the test branch >> create a pull request >> finalize changes >> merge pull request >> pull modified code into local machine using "git pull" in the master branch >> delete test branch "git branch -d <branchname>
+
+# Merge Conflicts
+=======
+>>>>>>> master
