@@ -16,7 +16,7 @@ To fix this, an empty repository can be created on github to link this local rep
 
 Once an empty repository is created, use these commands to link and push the local repository to the github repository.
 
-"git remote add origin <github_path>" -> Links the local repository to the github repository.
+"git remote add origin 'github_path'" -> Links the local repository to the github repository.
 
 "git remote -v" -> Used to show remote repositories connected to this local repository. 
 
@@ -38,7 +38,7 @@ To check branches, use this command "git branch".
 
 ## Creating a branch
 
-Use the command "git checkout -b <branchname>".
+Use the command "git checkout -b 'branchname'".
 
 The command "git checkout" is used to switch from branches.
 
@@ -50,13 +50,13 @@ This README.md file is updated through test-branch-1.
 
 # Diffing
 
-The "git diff <branchname>" command shows the changes between the different versions of code on each branch.
+The "git diff 'branchname'" command shows the changes between the different versions of code on each branch.
 
 # Merging
 
 Before merging the two branches together, push the changes to github first.
 
-"git push -u origin <branchname>"
+"git push -u origin 'branchname'"
 
 # Pull Request
 
@@ -72,7 +72,7 @@ To make new changes to the code, you start the process of creating a new branch 
 
 # Branch Merging Workflow
 
-Create test branch >> Make changes to code >> add, commit, and push changes in the test branch >> create a pull request >> finalize changes >> merge pull request >> pull modified code into local machine using "git pull" in the master branch >> delete test branch "git branch -d <branchname>
+Create test branch >> Make changes to code >> add, commit, and push changes in the test branch >> create a pull request >> finalize changes >> merge pull request >> pull modified code into local machine using "git pull" in the master branch >> delete test branch "git branch -d 'branchname'
 
 # Merge Conflicts
 
@@ -96,9 +96,9 @@ To undo a commit, use:
 
 "git reset HEAD~1" -> resets commit 1 place before the most recent commit.
 
-"git reset <commitHashCode>" -> unstages the changes from that commit.
+"git reset 'commitHashCode'" -> unstages the changes from that commit.
 
-"git reset --hard <commitHashCode>" -> unstages and completely resets the state of your code to the next commit.
+"git reset --hard 'commitHashCode'" -> unstages and completely resets the state of your code to the next commit.
 
 # Forking 
 
