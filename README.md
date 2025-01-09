@@ -24,11 +24,7 @@ Once an empty repository is created, use these commands to link and push the loc
 
 # Git Workflows
 
-<<<<<<< HEAD
 ![alt text](image-1.png)
-=======
-![Workflow Diagram](image-1.png)
->>>>>>> master
 
 # Branching
 
@@ -36,11 +32,7 @@ Branches act as commit/save paths. You are able to create multiple branches with
 
 This is best used when testing code or implementing new features. Branching acts as a safeguard in the case that a testing branch fails, it won't affect the main/production branch.
 
-<<<<<<< HEAD
 ![alt text](image.png)
-=======
-![Branching Diagram](image.png)
->>>>>>> master
 
 To check branches, use this command "git branch".
 
@@ -64,7 +56,6 @@ The "git diff <branchname>" command shows the changes between the different vers
 
 Before merging the two branches together, push the changes to github first.
 
-<<<<<<< HEAD
 "git push -u origin <branchname>"
 
 # Pull Request
@@ -84,5 +75,11 @@ To make new changes to the code, you start the process of creating a new branch 
 Create test branch >> Make changes to code >> add, commit, and push changes in the test branch >> create a pull request >> finalize changes >> merge pull request >> pull modified code into local machine using "git pull" in the master branch >> delete test branch "git branch -d <branchname>
 
 # Merge Conflicts
-=======
->>>>>>> master
+
+Merge conflicts happen when there are multiple people working on project and happen to modify the same code. When this happens, a branch merge will not be accepted until the conflict is resolved.
+
+## Resolving Conflicts
+
+After making changes to your code, use the command "git diff master" from the test branch to compare the two versions. 
+
+Use the command "git merge master" and an interface will popup on VS code showing the changes. You must choose which change to accept and then commit and push the change. 
