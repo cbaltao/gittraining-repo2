@@ -60,6 +60,8 @@ Before merging the two branches together, push the changes to github first.
 
 # Pull Request
 
+*Best managed through github*
+
 A request to pull your code into another branch. Other people will be able to view the changes before merging them into the main branch.
 
 After making a pull request, you are still able to make changes and commits as long as you are still in the test branch.
@@ -68,3 +70,8 @@ After your code is merged, the test branch should be deleted. Then you switch ba
 
 To make new changes to the code, you start the process of creating a new branch and merging the branch to the master branch all over again.
 
+# Branch Merging Workflow
+
+Create test branch >> Make changes to code >> add, commit, and push changes in the test branch >> create a pull request >> finalize changes >> merge pull request >> pull modified code into local machine using "git pull" in the master branch >> delete test branch "git branch -d <branchname>
+
+# Merge Conflicts
