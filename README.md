@@ -76,10 +76,13 @@ Create test branch >> Make changes to code >> add, commit, and push changes in t
 
 # Merge Conflicts
 
-Merge conflicts happen when there are multiple people working on project and happen to modify the same code. When this happens, a branch merge will not be accepted until the conflict is resolved.
+Merge conflicts happen when there are multiple people working on a project and happen to modify the same code. When this happens, a branch merge will not be accepted until the conflict is resolved.
 
 ## Resolving Conflicts
 
 After making changes to your code, use the command "git diff master" from the test branch to compare the two versions. 
 
 Use the command "git merge master" and an interface will popup on VS code showing the changes. You must choose which change to accept and then commit and push the change. 
+
+# Undoing 
+
